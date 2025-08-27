@@ -97,3 +97,58 @@
     margin-left: 45rem;
   }
 }
+
+@media (max-width: 768px) {
+  .hero {
+    overflow: hidden;
+
+    .hero-blob {
+      width: 150%;
+    }
+
+    nav {
+      .logo {
+        img {
+          width: 60px;
+        }
+
+        p {
+          font-size: 12pt;
+        }
+      }
+
+      .nav-links {
+        li {
+          display: none;
+        }
+
+        .btn-login {
+          padding: 0.5rem 1rem;
+        }
+      }
+    }
+
+    .hero-content {
+      padding: 2rem 1rem;
+
+      .first-p,
+      .second-p {
+        width: 100%;
+        margin: 1rem 0;
+        font-size: 11pt;
+        text-align: center;
+      }
+
+      .ilustration {
+        width: 70%;
+        margin: 2rem auto;
+        display: block;
+      }
+    }
+
+    .hero-wave {
+      width: 100%;
+      display: none;
+    }
+  }
+}

@@ -14,3 +14,9 @@
   position: absolute;
   margin-top: -20rem;
 }
+
+@media (max-width: 768px) {
+  .footer-svg {
+    margin-top: -5rem;
+  }
+}
