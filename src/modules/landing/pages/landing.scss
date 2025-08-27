@@ -1,0 +1,16 @@
+@use "sass:color";
+@import "@/styles/_variables.scss";
+@import "@/styles/_mixins.scss";
+
+.brands {
+  background-color: $color-primary;
+  margin: 2rem 0rem;
+  padding: 9rem 2rem;
+}
+
+.footer-svg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  margin-top: -20rem;
+}

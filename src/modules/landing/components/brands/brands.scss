@@ -1,0 +1,50 @@
+@import "@/styles/_variables.scss";
+@import "@/styles/_mixins.scss";
+
+.brands {
+  background-color: $color-primary;
+  margin: 2rem 0;
+  padding: 4rem 2rem;
+  overflow: hidden;
+  text-align: center;
+
+  h2 {
+    color: #fff;
+    font-family: $font-family-heading;
+  }
+  p {
+    color: #f7f7f7;
+  }
+  .brand-slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  .brand-track {
+    display: flex;
+    width: calc(200%);
+    animation: scroll 20s linear infinite;
+
+    .brand {
+      flex: 0 0 auto;
+      width: 150px;
+      margin: 0 2rem;
+
+      img {
+        width: 100%;
+        height: auto;
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

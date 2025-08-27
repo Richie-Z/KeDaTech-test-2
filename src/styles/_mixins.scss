@@ -1,0 +1,25 @@
+@use "sass:color";
+
+@mixin hover-color($color, $replaceColor: false) {
+  color: $color;
+
+  &:hover {
+    @if $replaceColor {
+      color: $replaceColor;
+    } @else {
+      color: color.scale($color, $lightness: -20%);
+    }
+  }
+}
+
+@mixin background-hover($bg-color, $replaceColor: false) {
+  background-color: $bg-color;
+
+  &:hover {
+    @if $replaceColor {
+      background-color: $replaceColor;
+    } @else {
+      background-color: color.scale($bg-color, $lightness: -10%);
+    }
+  }
+}

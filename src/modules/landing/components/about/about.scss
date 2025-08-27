@@ -1,0 +1,16 @@
+@import "@/styles/_variables.scss";
+
+.about {
+  padding: 4rem 2rem;
+  background-color: $color-bg;
+  text-align: center;
+  margin-top: -10rem;
+
+  p {
+    font-size: 14pt;
+    color: $color-text;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+}

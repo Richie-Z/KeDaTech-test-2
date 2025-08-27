@@ -1,0 +1,113 @@
+@import "@/styles/_variables.scss";
+@import "@/styles/_mixins.scss";
+
+.contact {
+  padding: 4rem 2rem;
+  background: $color-bg;
+  font-family: $font-family-base;
+  text-align: center;
+
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .contact-info {
+    background: #fff;
+    border: 1px solid $color-border;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: left;
+
+    h3 {
+      font-family: $font-family-heading;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: $color-text;
+    }
+
+    p {
+      color: $color-muted;
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        color: $color-text;
+
+        span {
+          margin-right: 0.75rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .contact-form {
+    background: #fff;
+    border: 1px solid $color-border;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: left;
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.5rem;
+
+      label {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: $color-text;
+      }
+
+      input,
+      textarea {
+        padding: 0.75rem 1rem;
+        border: 1px solid $color-border;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        font-family: $font-family-base;
+        transition:
+          border-color 0.2s,
+          box-shadow 0.2s;
+
+        &:focus {
+          border-color: $color-primary;
+          box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+          outline: none;
+        }
+      }
+    }
+
+    button {
+      background: $color-primary;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+
+      &:hover {
+        background: $color-alternative;
+      }
+    }
+  }
+}
